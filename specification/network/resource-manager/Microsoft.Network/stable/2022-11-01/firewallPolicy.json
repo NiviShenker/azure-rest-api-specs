@@ -559,7 +559,7 @@
           "Create FirewallPolicyRuleCollectionGroup With Web Categories": {
             "$ref": "./examples/FirewallPolicyRuleCollectionGroupWithWebCategoriesPut.json"
           },
-          "Create FirewallPolicyRuleCollectionGroup With http header to insert": {
+          "Create FirewallPolicyRuleCollectionGroup With Custom HTTP headers": {
             "$ref": "./examples/FirewallPolicyRuleCollectionGroupWithHttpHeadersToInsert.json"
           }
         },

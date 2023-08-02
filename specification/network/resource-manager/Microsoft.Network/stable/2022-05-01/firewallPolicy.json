@@ -680,7 +680,7 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/firewallPolicies/{firewallPolicyName}/signatureOverrides/default": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/firewallPolicies/{firewallPolicyName}/intrusionDetectionSignaturesOverrides/default": {
       "patch": {
         "operationId": "FirewallPolicyIdpsSignaturesOverrides_Patch",
         "description": "Will update the status of policy's signature overrides for IDPS",
@@ -890,7 +890,7 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/firewallPolicies/{firewallPolicyName}/signatureOverrides": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/firewallPolicies/{firewallPolicyName}/intrusionDetectionSignaturesOverrides": {
       "get": {
         "description": "Returns all signatures overrides objects for a specific policy as a list containing a single value.",
         "operationId": "FirewallPolicyIdpsSignaturesOverrides_List",
@@ -1685,6 +1685,10 @@
       "type": "object",
       "description": "Configuration for intrusion detection mode and rules.",
       "properties": {
+        "profile": {
+          "type": "string",
+          "description": "Intrusion detection Profile."
+        },
         "mode": {
           "$ref": "#/definitions/FirewallPolicyIntrusionDetectionStateOptions",
           "description": "Intrusion detection general state."

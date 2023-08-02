@@ -1,9 +1,10 @@
 {
   "parameters": {
-    "api-version": "2022-11-01",
-    "subscriptionId": "subid",
+    "connectionName": "connection1",
+    "networkVirtualApplianceName": "nva1",
     "resourceGroupName": "rg1",
-    "networkVirtualApplianceName": "nva"
+    "api-version": "2022-11-01",
+    "subscriptionId": "subid"
   },
   "responses": {
     "200": {
